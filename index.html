@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        /* Estilos para o corpo do site */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para o cabeçalho (árvore) */
+        header {
+            background-color: #6d4228;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Estilos para o contorno do logotipo */
+        .logo-container {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Adicione uma sombra branca para criar o contorno */
+            border-radius: 50%; /* Faça o contorno circular */
+            padding: 10px; /* Adicione algum espaço interno para o contorno */
+        }
+
+        /* Estilos para o logotipo no canto direito superior */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 40px;
+            color: #fff; /* Adicione a cor branca ao logotipo */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        /* Estilos para as seções */
+        .section-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        /* Estilos para os títulos das seções */
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Estilos para a galeria de portfólio */
+        .portfolio-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+        }
+
+        .portfolio-item {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Estilos para as imagens na seção "Sobre" */
+        .sobre-images {
+            display: flex;
+            justify-content: center;
+        }
+
+        .sobre-images .portfolio-item {
+            flex: 0 0 calc(50% - 10px);
+            margin: 0 5px;
+            position: relative;
+        }
+
+        .sobre-images .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .portfolio-item:hover .image-overlay {
+            opacity: 1;
+        }
+
+        .image-container {
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        /* Estilos para o efeito no hover */
+        .image-container:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilos para a descrição no hover */
+        .image-container:hover .image-overlay {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logotipo no canto direito superior com contorno de sombra -->
+        <div class="logo-container">
+            <div class="logo">CRISARTES</div>
+        </div>
+
+        <!-- Estrutura da árvore -->
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Introdução -->
+    <div class="section-container">
+        <section id="introducao">
+            <h1>Introdução</h1>
+            <!-- Conteúdo da introdução aqui -->
+        </section>
+    </div>
+
+    <!-- Botões personalizados para navegação -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="#introducao" style="background-color: #6d4228; color: #fff; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-right: 10px;">Introdução</a>
+        <a href="#sobre" style="background-color: #6d4228; color: #fff; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-right: 10px;">Sobre</a>
+        <a href="#portfolio" style="background-color: #6d4228; color: #fff; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px;">Portfólio</a>
+    </div>
+
+    <!-- Seção Sobre -->
+    <div class="section-container">
+        <section id="sobre">
+            <h1>Sobre</h1>
+            <p>
+                Os tapetes de retalho são uma opção de decoração única e versátil que tem conquistado o coração de muitas pessoas. Eles são feitos a partir da reutilização de pedaços de tecido, como retalhos de roupas ou tecidos excedentes, que são cuidadosamente costurados juntos para criar uma superfície macia e colorida. Esses tapetes têm diversas características que os tornam uma excelente escolha para compra em sua loja de tapetes de retalho:
+            </p>
+            <!-- Conteúdo sobre aqui -->
+        </section>
+    </div>
+
+    <!-- Seção de Portfólio -->
+    <div class="section-container">
+        <section id="portfolio">
+            <h1>Portfolio</h1>
+            <!-- Conteúdo do portfólio aqui -->
+        </section>
+    </div>
+
+    <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+    <div>
+        <h2>Localização</h2>
+        <p>123 Rua Exemplo, Cidade, Estado</p>
+    </div>
+    <div>
+        <h2>Entre em Contato</h2>
+        <p>Email: exemplo@email.com</p>
+        <p>Telefone: (123) 456-7890</p>
+    </div>
+    <div>
+        <h2>Redes Sociais</h2>
+        <!-- Adicione ícones ou links para suas redes sociais aqui -->
+    </div>
+</footer>
+
+
+</body>
+</html>
